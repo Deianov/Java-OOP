@@ -1,0 +1,40 @@
+package A_WorkingWithAbstraction.Exercises.GreedyTimes;
+
+public class Item {
+    private ItemType type;
+    private String name;
+    private int amount;
+
+    public Item(String name, int amount, ItemType type) {
+        this.name = name;
+        this.amount = amount;
+        this.type = type;
+    }
+
+    public static ItemType getItemType(String name) {
+        if (name == null || name.length() < 3) {
+            return null;
+        } else if (name.length() == 3) {
+            return ItemType.Cash;
+        } else if (name.toLowerCase().endsWith("gem")) {
+            return ItemType.Gem;
+        } else if (name.equalsIgnoreCase("Gold")) {
+            return ItemType.Gold;
+        }
+        return null;
+    }
+
+    public void  addAmount(int value) {
+        this.amount += value;
+    }
+
+
+    public ItemType getType() { return type; }
+    public String getName() { return name; }
+    public int getAmount() { return amount; }
+
+    @Override
+    public String toString() {
+        return String.format("##%s - %d", this.name, this.amount);
+    }
+}
