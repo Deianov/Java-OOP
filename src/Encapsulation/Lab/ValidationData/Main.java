@@ -1,4 +1,4 @@
-//02. SalaryIncrease
+//03. Validation Data
 package Encapsulation.Lab.ValidationData;
 
 import java.io.BufferedReader;
@@ -16,7 +16,12 @@ public class Main {
         while (lines-- > 0) {
             String[] data = reader.readLine().split(" ");
 
-            people.add(new Person(data[0], data[1], Integer.parseInt(data[2]), Double.parseDouble(data[3])));
+            try {
+                Person person = new Person(data[0], data[1], Integer.parseInt(data[2]), Double.parseDouble(data[3]));
+                people.add(person);
+            } catch (IllegalArgumentException e) {
+                System.out.println(e.getMessage());
+            }
         }
 
         double bonus = Double.parseDouble(reader.readLine());
