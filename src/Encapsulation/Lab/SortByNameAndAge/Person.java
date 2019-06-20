@@ -1,25 +1,25 @@
 package Encapsulation.Lab.SortByNameAndAge;
 
-public class Person {
+class Person {
     private String firstName;
     private String lastName;
     private Integer age;
 
-    public Person(String firstName, String lastName, Integer age) {
+    Person(String firstName, String lastName, Integer age) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.age = age;
     }
 
-    public String getFirstName() {
+    String getFirstName() {
         return firstName;
     }
 
-    public String getLastName() {
+    String getLastName() {
         return lastName;
     }
 
-    public Integer getAge() {
+    Integer getAge() {
         return age;
     }
 

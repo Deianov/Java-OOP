@@ -1,19 +1,19 @@
 package Encapsulation.Lab.SalaryIncrease;
 
-public class Person {
+class Person {
     private String firstName;
     private String lastName;
     private Integer age;
     private Double salary;
 
-    public Person(String firstName, String lastName, int age, double salary) {
+    Person(String firstName, String lastName, int age, double salary) {
         this.setFirstName(firstName);
         this.setLastName(lastName);
         this.setAge(age);
         this.setSalary(salary);
     }
 
-    public void increaseSalary(double bonus) {
+    void increaseSalary(double bonus) {
         if (this.age > 30) {
             this.salary += (this.salary * bonus / 100);
         } else {
@@ -21,7 +21,7 @@ public class Person {
         }
     }
 
-    public String getFirstName() {
+    String getFirstName() {
         return firstName;
     }
 
@@ -29,7 +29,7 @@ public class Person {
         this.firstName = firstName;
     }
 
-    public String getLastName() {
+    String getLastName() {
         return lastName;
     }
 
@@ -37,7 +37,7 @@ public class Person {
         this.lastName = lastName;
     }
 
-    public Integer getAge() {
+    Integer getAge() {
         return age;
     }
 
@@ -45,7 +45,7 @@ public class Person {
         this.age = age;
     }
 
-    public double getSalary() {
+    double getSalary() {
         return salary;
     }
 
