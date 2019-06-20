@@ -1,13 +1,13 @@
 package A_WorkingWithAbstraction.Exercises.TrafficLights;
 
-public class TrafficLight {
+class TrafficLight {
     private Lights state;
 
-    public TrafficLight(Lights state) {
+    TrafficLight(Lights state) {
         this.state = state;
     }
 
-    public void update() {
+    void update() {
         switch (this.state) {
             case RED:
                 this.state = Lights.GREEN;

@@ -1,6 +1,6 @@
 package A_WorkingWithAbstraction.Exercises.CardSuit;
 
-public enum Suits3 {
+enum Suits3 {
     CLUBS{
         @Override
         public String toString() {

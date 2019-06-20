@@ -1,6 +1,6 @@
 package A_WorkingWithAbstraction.Exercises.CardsWithPower;
 
-public enum Ranks {
+enum Ranks {
     TWO(2),
     THREE(3),
     FOUR(4),

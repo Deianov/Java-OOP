@@ -3,20 +3,20 @@ package A_WorkingWithAbstraction.Exercises.GreedyTimes;
 import java.util.*;
 import java.util.stream.Collectors;
 
-public class Bag {
+class Bag {
     private long capacity;
     private long totalAmount;
     private LinkedHashMap<String, Item> items;
     private LinkedHashMap<String, Long> amounts;
 
-    public Bag(long capacity) {
+    Bag(long capacity) {
         this.capacity = capacity;
         this.totalAmount = 0;
         this.items = new LinkedHashMap<>();
         this.amounts = new LinkedHashMap<>();
     }
 
-    public void add(Item item) {
+    void add(Item item) {
         if (isValid(item)) {
 
             String name = item.getName();
@@ -82,7 +82,7 @@ public class Bag {
                 .collect(Collectors.toCollection(ArrayList::new));
     }
 
-    public void print() {
+    void print() {
         this.amounts.entrySet()
                 .stream()
                 .sorted((a, b) -> Long.compare(b.getValue(), a.getValue()))

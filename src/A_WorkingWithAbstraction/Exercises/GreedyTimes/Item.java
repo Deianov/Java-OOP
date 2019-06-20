@@ -1,17 +1,17 @@
 package A_WorkingWithAbstraction.Exercises.GreedyTimes;
 
-public class Item {
+class Item {
     private ItemType type;
     private String name;
     private int amount;
 
-    public Item(String name, int amount, ItemType type) {
+    Item(String name, int amount, ItemType type) {
         this.name = name;
         this.amount = amount;
         this.type = type;
     }
 
-    public static ItemType getItemType(String name) {
+    static ItemType getItemType(String name) {
         if (name == null || name.length() < 3) {
             return null;
         } else if (name.length() == 3) {
@@ -24,14 +24,14 @@ public class Item {
         return null;
     }
 
-    public void  addAmount(int value) {
+    void  addAmount(int value) {
         this.amount += value;
     }
 
 
-    public ItemType getType() { return type; }
-    public String getName() { return name; }
-    public int getAmount() { return amount; }
+    ItemType getType() { return type; }
+    String getName() { return name; }
+    int getAmount() { return amount; }
 
     @Override
     public String toString() {

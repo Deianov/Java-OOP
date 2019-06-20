@@ -1,6 +1,6 @@
 package A_WorkingWithAbstraction.Exercises.GreedyTimes;
 
-public enum ItemType {
+enum ItemType {
     Cash,
     Gem,
     Gold

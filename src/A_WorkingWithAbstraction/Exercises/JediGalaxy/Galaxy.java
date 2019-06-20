@@ -1,13 +1,13 @@
 package A_WorkingWithAbstraction.Exercises.JediGalaxy;
 
-public class Galaxy {
+class Galaxy {
     private int[][] matrix;
 
-    public Galaxy(int rows, int cols) {
+    Galaxy(int rows, int cols) {
         this.matrix = new int[rows][cols];
     }
 
-    public void init(int startValue){
+    void init(int startValue){
         for (int row = 0; row < matrix.length; row++) {
             for (int col = 0; col < matrix[0].length; col++) {
                 matrix[row][col] = startValue++;
@@ -15,8 +15,7 @@ public class Galaxy {
         }
     }
 
-
-    public int getDiagonal(int row, int col) {
+    int getDiagonal(int row, int col) {
         int sumPoints = 0;
 
         while (row >= 0 && col < this.matrix[0].length) {
@@ -29,7 +28,7 @@ public class Galaxy {
         return sumPoints;
     }
 
-    public void destroyDiagonalByEvil(int row, int col) {
+    void destroyDiagonalByEvil(int row, int col) {
         while (row >= 0 && col >= 0) {
             if (isValid(row, col)) {
                 matrix[row][col] = 0;
@@ -38,7 +37,6 @@ public class Galaxy {
             col--;
         }
     }
-
 
     private boolean isValid(int row, int col) {
         return row >= 0 && col >= 0 && row < this.matrix.length && col < this.matrix[0].length;

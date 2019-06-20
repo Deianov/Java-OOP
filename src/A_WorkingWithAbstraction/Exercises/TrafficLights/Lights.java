@@ -1,6 +1,6 @@
 package A_WorkingWithAbstraction.Exercises.TrafficLights;
 
-public enum Lights {
+enum Lights {
     RED,
     GREEN,
     YELLOW

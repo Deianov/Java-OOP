@@ -1,6 +1,6 @@
 package A_WorkingWithAbstraction.Exercises.CardsWithPower;
 
-public enum Suits {
+enum Suits {
     CLUBS(0), DIAMONDS(13), HEARTS(26), SPADES(39);
 
     private int value;
