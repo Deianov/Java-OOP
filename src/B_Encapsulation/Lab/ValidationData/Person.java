@@ -1,4 +1,4 @@
-package Encapsulation.Lab.FirstAndReserveTeam;
+package B_Encapsulation.Lab.ValidationData;
 
 class Person {
     private String firstName;

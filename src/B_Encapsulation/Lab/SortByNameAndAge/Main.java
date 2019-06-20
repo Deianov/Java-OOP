@@ -1,4 +1,4 @@
-package Encapsulation.Lab.SortByNameAndAge;
+package B_Encapsulation.Lab.SortByNameAndAge;
 
 import java.io.BufferedReader;
 import java.io.IOException;

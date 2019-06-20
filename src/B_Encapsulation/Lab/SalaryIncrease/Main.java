@@ -1,5 +1,5 @@
 //02. SalaryIncrease
-package Encapsulation.Lab.SalaryIncrease;
+package B_Encapsulation.Lab.SalaryIncrease;
 
 import java.io.BufferedReader;
 import java.io.IOException;

@@ -1,5 +1,5 @@
-//03. Validation Data
-package Encapsulation.Lab.ValidationData;
+//04. First And Reserve Team
+package B_Encapsulation.Lab.FirstAndReserveTeam;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -12,22 +12,20 @@ class Main {
         int lines = Integer.parseInt(reader.readLine());
 
         ArrayList<Person> people = new ArrayList<>();
+        Team team = new Team("Team1");
 
         while (lines-- > 0) {
             String[] data = reader.readLine().split(" ");
 
             try {
                 Person person = new Person(data[0], data[1], Integer.parseInt(data[2]), Double.parseDouble(data[3]));
-                people.add(person);
+                team.addPlayer(person);
             } catch (IllegalArgumentException e) {
                 System.out.println(e.getMessage());
             }
         }
 
-        double bonus = Double.parseDouble(reader.readLine());
-        for (Person person : people) {
-            person.increaseSalary(bonus);
-            System.out.println(person.toString());
-        }
+        System.out.println(String.format("First team have %d players", team.getFirstTeam().size()));
+        System.out.println(String.format("Reserve team have %d players", team.getReserveTeam().size()));
     }
 }
