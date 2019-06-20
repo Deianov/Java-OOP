@@ -4,7 +4,7 @@ June - August 2019 Software University (https://softuni.bg)
 
 Course Topics<br/>
 * [Working with Abstraction](https://github.com/Deianov/Java-OOP/tree/master/src/A_WorkingWithAbstraction)<br/>
-* [Encapsulation](https://github.com/Deianov/Java-OOP/tree/master/src/A_WorkingWithAbstraction)<br/>
+* [Encapsulation](https://github.com/Deianov/Java-OOP/tree/master/src/B_Encapsulation)<br/>
 * Inheritance<br/>
 * Interfaces and Abstraction<br/>
 * Polymorphism<br/>
