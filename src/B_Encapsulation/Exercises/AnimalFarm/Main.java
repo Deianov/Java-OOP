@@ -3,7 +3,7 @@ package B_Encapsulation.Exercises.AnimalFarm;
 
 import java.util.Scanner;
 
-public class Main {
+class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 

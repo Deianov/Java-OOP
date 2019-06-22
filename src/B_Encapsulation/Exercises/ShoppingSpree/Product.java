@@ -1,6 +1,6 @@
 package B_Encapsulation.Exercises.ShoppingSpree;
 
-public class Product {
+class Product {
     private String name;
     private double cost;
 
@@ -19,16 +19,16 @@ public class Product {
         this.cost = cost;
     }
 
-    public Product(String name, double cost) {
+    Product(String name, double cost) {
         this.setName(name);
         this.setCost(cost);
     }
 
-    public double getCost() {
+    double getCost() {
         return this.cost;
     }
 
-    public String getName() {
+    String getName() {
         return this.name;
     }
 

@@ -1,6 +1,6 @@
 package B_Encapsulation.Exercises.PizzaCalories;
 
-public enum ToppingsModifiers {
+enum ToppingsModifiers {
     Meat (1.2),
     Veggies (0.8),
     Cheese (1.1),
@@ -12,7 +12,7 @@ public enum ToppingsModifiers {
         this.value = value;
     }
 
-    public double getValue() {
+    double getValue() {
         return this.value;
     }
 }

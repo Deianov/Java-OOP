@@ -1,6 +1,6 @@
 package B_Encapsulation.Exercises.PizzaCalories;
 
-public class Dough {
+class Dough {
     private String flourType;
     private String bakingTechnique;
     private double weight;
@@ -34,13 +34,13 @@ public class Dough {
         this.weight = weight;
     }
 
-    public Dough(String flourType, String bakingTechnique, double weight) {
+    Dough(String flourType, String bakingTechnique, double weight) {
         this.setFlourType(flourType);
         this.setBakingTechnique(bakingTechnique);
         this.setWeight(weight);
     }
 
-    public double calculateCalories() {
+    double calculateCalories() {
 
         double flourCalories = DoughModifiers.valueOf(this.flourType).getValue();
         double bakingCalories = DoughModifiers.valueOf(this.bakingTechnique).getValue();
@@ -48,7 +48,7 @@ public class Dough {
         return 2 * this.weight * flourCalories * bakingCalories;
     }
 
-    public String getFlourType() { return this.flourType; }
-    public String getBakingTechnique() { return this.bakingTechnique; }
-    public double getWeight() { return this.weight; }
+    String getFlourType() { return this.flourType; }
+    String getBakingTechnique() { return this.bakingTechnique; }
+    double getWeight() { return this.weight; }
 }

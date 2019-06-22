@@ -2,7 +2,7 @@ package B_Encapsulation.Exercises.AnimalFarm;
 
 import java.text.DecimalFormat;
 
-public class Chicken {
+class Chicken {
     private String name;
     private int age;
 
@@ -23,7 +23,7 @@ public class Chicken {
     private String getName() { return this.name; }
     private int getAge() { return this.age; }
 
-    public Chicken(String name, int age) {
+    Chicken(String name, int age) {
         this.setName(name);
         this.setAge(age);
     }
@@ -32,7 +32,7 @@ public class Chicken {
         return (this.getAge() <= 5) ? 2 : (this.getAge() <= 11) ? 1 : 0.75;
     }
 
-    public double productPerDay () {
+    double productPerDay () {
         return this.calculateProductPerDay();
     }
 

@@ -3,7 +3,7 @@ package B_Encapsulation.Exercises.PizzaCalories;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Pizza {
+class Pizza {
     private String name;
     private Dough dough;
     private List<Topping> toppings;
@@ -18,7 +18,7 @@ public class Pizza {
         this.name = testName;
     }
 
-    public void setDough(Dough dough) {
+    void setDough(Dough dough) {
         this.dough = dough;
     }
 
@@ -29,23 +29,23 @@ public class Pizza {
         this.toppingsCount = count;
     }
 
-    public Pizza(String name, int toppingsCount) {
+    Pizza(String name, int toppingsCount) {
         this.setName(name);
         this.setToppings(toppingsCount);
         this.dough = null;
         this.toppings = new ArrayList<>();
     }
 
-    public void addTopping(Topping topping) {
+    void addTopping(Topping topping) {
         this.toppings.add(topping);
     }
 
-    public String getName() { return this.name; }
-    public Dough getDough() { return this.dough; }
-    public List<Topping> getToppings() { return this.toppings; }
-    public int getToppingsCount() { return this.toppingsCount; }
+    String getName() { return this.name; }
+    Dough getDough() { return this.dough; }
+    List<Topping> getToppings() { return this.toppings; }
+    int getToppingsCount() { return this.toppingsCount; }
 
-    public double getOverallCalories() {
+    double getOverallCalories() {
         double calories = 0;
         calories += this.dough.calculateCalories();
 

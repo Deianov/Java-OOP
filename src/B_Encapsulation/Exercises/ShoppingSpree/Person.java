@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class Person {
+class Person {
     private String name;
     private double money;
     private final List<Product> products;
@@ -24,14 +24,13 @@ public class Person {
         this.money = money;
     }
 
-
-    public Person(String name, double money) {
+    Person(String name, double money) {
         this.setName(name);
         this.setMoney(money);
         this.products = new ArrayList<>();
     }
 
-    public void buyProduct(Product product) {
+    void buyProduct(Product product) {
         if (product.getCost() <= this.money) {
             this.products.add(product);
             this.setMoney(this.money - product.getCost());
@@ -40,7 +39,7 @@ public class Person {
         }
     }
 
-    public String getName() {
+    String getName() {
         return this.name;
     }
 

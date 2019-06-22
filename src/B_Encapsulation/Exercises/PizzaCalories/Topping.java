@@ -1,7 +1,7 @@
 package B_Encapsulation.Exercises.PizzaCalories;
 
 
-public class Topping {
+class Topping {
     private String toppingType;
     private double weight;
 
@@ -23,15 +23,15 @@ public class Topping {
         this.weight = weight;
     }
 
-    public Topping(String toppingType, double weight) {
+    Topping(String toppingType, double weight) {
         this.setToppingType(toppingType);
         this.setWeight(weight);
     }
 
-    public String getToppingType() { return this.toppingType; }
-    public double getWeight() { return this.weight; }
+    String getToppingType() { return this.toppingType; }
+    double getWeight() { return this.weight; }
 
-    public double calculateCalories() {
+    double calculateCalories() {
 
         return 2 * this.weight * ToppingsModifiers.valueOf(this.getToppingType()).getValue();
     }

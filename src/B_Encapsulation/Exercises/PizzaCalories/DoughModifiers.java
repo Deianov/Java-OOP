@@ -1,6 +1,6 @@
 package B_Encapsulation.Exercises.PizzaCalories;
 
-public enum DoughModifiers {
+enum DoughModifiers {
     White (1.5),
     Wholegrain (1.0),
     Crispy (0.9),
@@ -13,7 +13,7 @@ public enum DoughModifiers {
         this.value = value;
     }
 
-    public double getValue() {
+    double getValue() {
         return this.value;
     }
 }
