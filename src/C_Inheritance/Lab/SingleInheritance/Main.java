@@ -1,7 +1,7 @@
 //01.Single Inheritance
-package C_Inheritance.Lab;
+package C_Inheritance.Lab.SingleInheritance;
 
-public class Main {
+class Main {
     public static void main(String[] args) {
 
         Dog dog = new Dog();
