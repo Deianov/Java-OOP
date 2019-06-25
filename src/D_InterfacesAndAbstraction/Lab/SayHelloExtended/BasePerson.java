@@ -1,6 +1,6 @@
 package D_InterfacesAndAbstraction.Lab.SayHelloExtended;
 
-public class BasePerson implements Person{
+public abstract class BasePerson implements Person{
     private String name;
 
     protected BasePerson(String name) {
