@@ -1,32 +1,31 @@
 //04. Traffic Lights
 package A_WorkingWithAbstraction.Exercises.TrafficLights;
 
-import java.util.ArrayList;
-import java.util.Scanner;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.Arrays;
 
 class Main {
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+    public static void main(String[] args) throws IOException {
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
-        String[] initialStates = scanner.nextLine().split("\\s+");
+        TrafficLight[] trafficLights =
+                Arrays.stream(reader.readLine()
+                        .split(" "))
+                        .map(light -> new TrafficLight(Lights.valueOf(light)))
+                        .toArray(TrafficLight[]::new);
 
-        int count = Integer.parseInt(scanner.nextLine());
-
-        ArrayList<TrafficLight> trafficLights = new ArrayList<>();
-
-        for (String state : initialStates) {
-            TrafficLight trafficLight = new TrafficLight(Lights.valueOf(state));
-            trafficLights.add(trafficLight);
-        }
+        int count = Integer.parseInt(reader.readLine());
 
         while (count-- > 0) {
-            System.out.println();
 
             for (TrafficLight trafficLight : trafficLights) {
 
                 trafficLight.update();
                 System.out.print(trafficLight.toString() + " ");
             }
+            System.out.println();
         }
     }
 }
