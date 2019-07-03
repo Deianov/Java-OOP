@@ -37,7 +37,7 @@ public class Vehicle {
     }
 
     public void drive(double kilometers) {
-        if (this.fuel > 0) {
+        if (this.fuel >= fuelConsumption * kilometers) {
             fuel -= fuelConsumption * kilometers;
         }
     }
