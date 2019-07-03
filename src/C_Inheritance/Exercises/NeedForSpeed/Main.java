@@ -5,7 +5,7 @@ import C_Inheritance.Exercises.NeedForSpeed.vehicle.*;
 
 public class Main {
     public static void main(String[] args) {
-        Vehicle car = new Car(10.0, 100);
+        Vehicle car = new Car(50, 100);
         Vehicle familyCar = new FamilyCar(10.0, 100);
         Vehicle sportCar = new SportCar(10.0, 100);
 
@@ -13,8 +13,9 @@ public class Main {
         Vehicle raceMotorcycle = new RaceMotorcycle(10.0, 100);
         Vehicle crossMotorcycle = new CrossMotorcycle(10.0, 100);
 
-        car.drive(8.0);
-        car.drive(8.0);
+        System.out.println(car.getFuel());
+        car.drive(10);
+        car.drive(10);
         System.out.println(car.getFuel());
     }
 }
