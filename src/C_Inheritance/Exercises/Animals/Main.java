@@ -1,6 +1,8 @@
 // 06. Animal
 package C_Inheritance.Exercises.Animals;
 
+import C_Inheritance.Exercises.Animals.animals.*;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -43,7 +45,6 @@ class Main {
             }
 
             if (animal != null) {
-                System.out.println(animal.getClass().getSimpleName());
                 System.out.println(animal.toString());
                 System.out.println(animal.produceSound());
             }
