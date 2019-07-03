@@ -1,34 +1,30 @@
 package C_Inheritance.Exercises.NeedForSpeed.vehicle;
 
 public class Vehicle {
-    private static final Double DEFAULT_FUEL_CONSUMPTION = 1.25;
-    private Double fuelConsumption;
-    private Double fuel;
+    private static final double DEFAULT_FUEL_CONSUMPTION = 1.25;
+    private double fuelConsumption;
+    private double fuel;
     private int horsePower;
 
-    public Vehicle(Double fuel, int horsePower) {
+    public Vehicle(double fuel, int horsePower) {
         this.setFuelConsumption(DEFAULT_FUEL_CONSUMPTION);
         this.setFuel(fuel);
         this.setHorsePower(horsePower);
-    }
-
-    public Double getDefaultFuelConsumption() {
-        return Vehicle.DEFAULT_FUEL_CONSUMPTION;
     }
 
     public Double getFuelConsumption() {
         return fuelConsumption;
     }
 
-    protected void setFuelConsumption(Double fuelConsumption) {
+    protected void setFuelConsumption(double fuelConsumption) {
         this.fuelConsumption = fuelConsumption;
     }
 
-    public Double getFuel() {
+    public double getFuel() {
         return fuel;
     }
 
-    private void setFuel(Double fuel) {
+    private void setFuel(double fuel) {
         this.fuel = fuel;
     }
 
@@ -40,11 +36,9 @@ public class Vehicle {
         this.horsePower = horsePower;
     }
 
-    public void drive(Double kilometers) {
-        Double fuelNeeded = this.fuelConsumption * (kilometers / 100.0);
-
-        if (kilometers > 0 && this.fuel >= fuelNeeded) {
-            this.setFuel(this.getFuel() - fuelNeeded);
+    public void drive(double kilometers) {
+        if (this.fuel > 0) {
+            fuel -= fuelConsumption * kilometers;
         }
     }
 }

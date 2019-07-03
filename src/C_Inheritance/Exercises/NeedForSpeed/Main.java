@@ -13,8 +13,8 @@ public class Main {
         Vehicle raceMotorcycle = new RaceMotorcycle(10.0, 100);
         Vehicle crossMotorcycle = new CrossMotorcycle(10.0, 100);
 
-        System.out.println(car.getDefaultFuelConsumption());
-        System.out.println(sportCar.getDefaultFuelConsumption());
-        System.out.println(raceMotorcycle.getDefaultFuelConsumption());
+        car.drive(8.0);
+        car.drive(8.0);
+        System.out.println(car.getFuel());
     }
 }

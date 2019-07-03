@@ -1,7 +1,7 @@
 package C_Inheritance.Exercises.NeedForSpeed.vehicle;
 
 public class FamilyCar extends Car {
-    public FamilyCar(Double fuel, int horsePower) {
+    public FamilyCar(double fuel, int horsePower) {
         super(fuel, horsePower);
     }
 }
