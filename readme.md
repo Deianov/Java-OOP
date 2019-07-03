@@ -7,7 +7,7 @@ Course Topics<br/>
 * [Encapsulation](https://github.com/Deianov/Java-OOP/tree/master/src/B_Encapsulation)<br/>
 * [Inheritance](https://github.com/Deianov/Java-OOP/tree/master/src/C_Inheritance)<br/>
 * [Interfaces and Abstraction](https://github.com/Deianov/Java-OOP/tree/master/src/D_InterfacesAndAbstraction)<br/>
-* Polymorphism<br/>
+* [Polymorphism](https://github.com/Deianov/Java-OOP/tree/master/src/E_Polymorphism)<br/>
 * SOLID<br/>
 * Reflection and Annotation<br/>
 * Workshop<br/>
