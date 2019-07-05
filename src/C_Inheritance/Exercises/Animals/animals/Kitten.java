@@ -1,15 +1,11 @@
 package C_Inheritance.Exercises.Animals.animals;
 
 public class Kitten extends Cat {
-    private static final String ANIMAL_GENDER = "Female";
+    private static final String GENDER = "Female";
     private static final String ANIMAL_SOUND = "Meow";
 
     public Kitten(String name, int age) {
-        super(name, age, ANIMAL_GENDER);
-    }
-
-    public Kitten(String name, int age, String gender) {
-        super(name, age, ANIMAL_GENDER);
+        super(name, age, GENDER);
     }
 
     @Override

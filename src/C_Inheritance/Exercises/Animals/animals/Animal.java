@@ -1,6 +1,6 @@
 package C_Inheritance.Exercises.Animals.animals;
 
-public class Animal {
+public abstract class Animal {
     private static final String INPUT_ERROR_MESSAGE = "Invalid input!";
     private String name;
     private int age;
@@ -13,7 +13,6 @@ public class Animal {
     }
 
     private void setName(String name) {
-        throwIfEmpty(name);
         this.name = name;
     }
 
@@ -25,14 +24,7 @@ public class Animal {
     }
 
     protected void setGender(String gender) {
-        throwIfEmpty(gender);
         this.gender = gender;
-    }
-
-    protected void throwIfEmpty(String input) throws IllegalArgumentException {
-        if (input == null || input.trim().isEmpty()) {
-            throw new IllegalArgumentException(INPUT_ERROR_MESSAGE);
-        }
     }
 
     public String getName() {
@@ -47,12 +39,16 @@ public class Animal {
         return gender;
     }
 
-    public String produceSound() {
-        return "";
-    }
+    public abstract String produceSound();
 
     @Override
     public String toString() {
-        return this.getClass().getSimpleName();
+        return String.format("%s%n%s %d %s%n%s"
+                ,this.getClass().getSimpleName()
+                ,this.getName()
+                ,this.getAge()
+                ,this.getGender()
+                ,this.produceSound()
+        );
     }
 }

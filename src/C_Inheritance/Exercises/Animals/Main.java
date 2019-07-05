@@ -34,10 +34,10 @@ class Main {
                         animal = new Cat(name, age, gender);
                         break;
                     case "Kitten" :
-                        animal = new Kitten(name, age, gender);
+                        animal = new Kitten(name, age);
                         break;
                     case "Tomcat" :
-                        animal = new Tomcat(name, age, gender);
+                        animal = new Tomcat(name, age);
                         break;
                 }
             } catch (IllegalArgumentException e) {
@@ -46,7 +46,6 @@ class Main {
 
             if (animal != null) {
                 System.out.println(animal.toString());
-                System.out.println(animal.produceSound());
             }
         }
     }

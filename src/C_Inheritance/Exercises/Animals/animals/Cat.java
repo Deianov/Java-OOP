@@ -11,12 +11,4 @@ public class Cat extends Animal {
     public String produceSound() {
         return ANIMAL_SOUND;
     }
-
-    @Override
-    public String toString() {
-        return super.toString() + String.format("%n%s %d %s",
-                super.getName(),
-                super.getAge(),
-                super.getGender());
-    }
 }
