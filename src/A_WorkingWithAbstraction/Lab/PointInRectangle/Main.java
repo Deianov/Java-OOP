@@ -1,4 +1,4 @@
-//02. Point in Rectangle
+//02. Point in RectangleShape
 package A_WorkingWithAbstraction.Lab.PointInRectangle;
 
 import java.util.Arrays;
