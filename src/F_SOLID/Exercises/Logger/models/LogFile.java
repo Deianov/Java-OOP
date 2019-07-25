@@ -2,18 +2,16 @@ package F_SOLID.Exercises.Logger.models;
 
 import F_SOLID.Exercises.Logger.interfaces.File;
 
-import java.io.FileOutputStream;
+import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.io.OutputStream;
-import java.io.PrintWriter;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.nio.file.StandardOpenOption;
-import java.util.Arrays;
-import java.util.stream.Stream;
+
+import static java.nio.charset.StandardCharsets.UTF_8;
 
 public class LogFile implements File {
-    private static final String DEFAULT_PATH_AND_NAME = "log.txt";
+    private static final String DEFAULT_PATH_AND_NAME = "src/F_SOLID/Exercises/Logger/log.txt";
     private StringBuilder text;
     private int size;
     private String filePathAndName;
@@ -34,11 +32,13 @@ public class LogFile implements File {
     }
 
     @Override
-    public boolean write() {
+    public boolean write(String txt) {
         try {
-            Files.write(Paths.get(this.filePathAndName),
-                    this.text.toString().getBytes(), StandardOpenOption.APPEND);
+            Files.write(Paths.get(this.filePathAndName), txt.getBytes(UTF_8), StandardOpenOption.CREATE, StandardOpenOption.APPEND);
             return true;
+        } catch (FileNotFoundException e) {
+            System.out.println("FileNotFoundException");
+
         } catch (IOException e) {
             System.out.println(e.getMessage());
         }
@@ -55,12 +55,6 @@ public class LogFile implements File {
                 .chars()
                 .filter(Character::isAlphabetic)
                 .sum();
-
-//        return Stream.of(this.text.toString().toCharArray())
-//                .map(String::valueOf)
-//                .filter(s -> Character.isAlphabetic(s.charAt(0)))
-//                .mapToInt(e -> e.charAt(0))
-//                .sum();
     }
 
     @Override

@@ -4,18 +4,18 @@ import F_SOLID.Exercises.Logger.enums.ReportLevel;
 import F_SOLID.Exercises.Logger.interfaces.File;
 import F_SOLID.Exercises.Logger.interfaces.Layout;
 
-import java.io.FileNotFoundException;
-
 public class FileAppender extends AppenderImpl {
     private File file;
 
     public FileAppender(Layout layout) {
         super(layout);
+        this.file = new LogFile();
 
     }
 
     public FileAppender(Layout layout, ReportLevel reportLevel) {
         super(layout, reportLevel);
+        this.file = new LogFile();
     }
 
     public void setFile(File file) {
@@ -30,7 +30,9 @@ public class FileAppender extends AppenderImpl {
             throw new IllegalCallerException("File not set!");
         }
         if (this.canAppend(reportLevel)) {
-            file.append(this.getLayout().format(time, message, reportLevel));
+            String text = this.getLayout().format(time, message, reportLevel);
+            file.append(text);
+            file.write(text);
         }
     }
 

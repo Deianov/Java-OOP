@@ -1,21 +1,31 @@
 package F_SOLID.Exercises.Logger;
 
+import F_SOLID.Exercises.Logger.controllers.EngineImpl;
+import F_SOLID.Exercises.Logger.controllers.InputParser;
+import F_SOLID.Exercises.Logger.factory.LoggerFactory;
 import F_SOLID.Exercises.Logger.interfaces.*;
-import F_SOLID.Exercises.Logger.models.*;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 
 public class Main {
-    public static void main(String[] args) {
 
-        Layout simpleLayout = new SimpleLayout();
-        Appender consoleAppender = new ConsoleAppender(simpleLayout);
+    private static final Factory<Logger> LOGGER_FACTORY = new LoggerFactory();
+    private static Engine engine;
 
-        File file = new LogFile();
-        Appender fileAppender = new FileAppender(simpleLayout);
-        ((FileAppender) fileAppender).setFile(file);
 
-        Logger logger = new MessageLogger(consoleAppender);
+    public static void main(String[] args) throws IOException {
+        InputParser inputParser = new InputParser();
 
-        logger.logError("3/26/2015 2:08:11 PM", "Error parsing JSON.");
-        logger.logInfo("3/26/2015 2:08:11 PM", "User Pesho successfully registered.");
+        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+
+        Logger logger = Main.LOGGER_FACTORY.produce(inputParser.readLoggerInfo(bufferedReader));
+
+        Main.engine = new EngineImpl(logger);
+        Main.engine.run("END", bufferedReader);
+
+        System.out.println(engine.toString());
+
     }
 }

@@ -15,8 +15,9 @@ public class ConsoleAppender extends AppenderImpl {
 
     @Override
     public void append(String time, String message, ReportLevel reportLevel) {
-        super.incrementMessagesCount();
+
         if (this.canAppend(reportLevel)){
+            super.incrementMessagesCount();
             String output = this.getLayout().format(time, message, reportLevel);
             System.out.println(output);
         }

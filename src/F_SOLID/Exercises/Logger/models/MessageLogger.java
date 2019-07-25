@@ -18,28 +18,8 @@ public class MessageLogger implements Logger {
     }
 
     @Override
-    public void logInfo(String time, String message) {
-        this.logAll(time, message, ReportLevel.INFO);
-    }
-
-    @Override
-    public void logWarning(String time, String message) {
-        this.logAll(time, message, ReportLevel.WARNING);
-    }
-
-    @Override
-    public void logError(String time, String message) {
-        this.logAll(time, message, ReportLevel.ERROR);
-    }
-
-    @Override
-    public void logCritical(String time, String message) {
-        this.logAll(time, message, ReportLevel.CRITICAL);
-    }
-
-    @Override
-    public void logFatal(String time, String message) {
-        this.logAll(time, message, ReportLevel.FATAL);
+    public void log(String time, String message, ReportLevel reportLevel) {
+        this.logAll(time, message, reportLevel);
     }
 
     @Override
@@ -53,6 +33,4 @@ public class MessageLogger implements Logger {
         }
         return stringBuilder.toString();
     }
-
-
 }

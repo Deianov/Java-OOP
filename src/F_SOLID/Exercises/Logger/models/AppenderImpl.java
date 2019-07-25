@@ -5,7 +5,7 @@ import F_SOLID.Exercises.Logger.interfaces.Appender;
 import F_SOLID.Exercises.Logger.interfaces.Layout;
 
 public abstract class AppenderImpl implements Appender {
-    public static final ReportLevel REPORT_LEVEL_DEFAULT = ReportLevel.INFO;
+    private static final ReportLevel REPORT_LEVEL_DEFAULT = ReportLevel.INFO;
     private Layout layout;
     private ReportLevel reportLevel;
     private int messagesCount;

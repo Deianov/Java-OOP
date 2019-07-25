@@ -17,7 +17,8 @@ public class XmlLayout implements Layout {
                 .append('\n').append('\t')
                 .append("<message>").append(message).append("</message>")
                 .append('\n')
-                .append("</log>");
+                .append("</log>")
+                .append('\n');
 
         return stringBuilder.toString();
     }
