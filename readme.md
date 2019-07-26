@@ -9,7 +9,7 @@ Course Topics<br/>
 * [Interfaces and Abstraction](https://github.com/Deianov/Java-OOP/tree/master/src/D_InterfacesAndAbstraction)<br/>
 * [Polymorphism](https://github.com/Deianov/Java-OOP/tree/master/src/E_Polymorphism)<br/>
 * SOLID<br/>
-* Reflection and Annotation<br/>
+* G_Reflection.Lab.L01.Reflection and Annotation<br/>
 * Workshop<br/>
 * Unit Testing<br/>
 * Test Driven Development<br/>
