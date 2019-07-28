@@ -9,8 +9,7 @@ Course Topics<br/>
 * [Interfaces and Abstraction](https://github.com/Deianov/Java-OOP/tree/master/src/D_InterfacesAndAbstraction)<br/>
 * [Polymorphism](https://github.com/Deianov/Java-OOP/tree/master/src/E_Polymorphism)<br/>
 * [SOLID](https://github.com/Deianov/Java-OOP/tree/master/src/F_SOLID)<br/>
-* [Reflection](https://github.com/Deianov/Java-OOP/tree/master/src/G_Reflection)<br/>
-* [Annotation](https://github.com/Deianov/Java-OOP/tree/master/src/H_Annotation)<br/>
+* [Reflection and Annotation](https://github.com/Deianov/Java-OOP/tree/master/src/G_Reflection)<br/>
 * Exceptions and Error Handling
 * Debugging Techniques
 * Workshop<br/>
