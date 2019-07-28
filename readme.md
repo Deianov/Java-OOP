@@ -10,8 +10,8 @@ Course Topics<br/>
 * [Polymorphism](https://github.com/Deianov/Java-OOP/tree/master/src/E_Polymorphism)<br/>
 * [SOLID](https://github.com/Deianov/Java-OOP/tree/master/src/F_SOLID)<br/>
 * [Reflection and Annotation](https://github.com/Deianov/Java-OOP/tree/master/src/G_Reflection)<br/>
-* Exceptions and Error Handling
-* Debugging Techniques
+* [Exceptions and Error Handling](https://github.com/Deianov/Java-OOP/tree/master/src/H_ExceptionsAndErrorHandling)<br/>
+* Debugging Techniques<br/>
 * Workshop<br/>
 * Unit Testing<br/>
 * Test Driven Development<br/>
