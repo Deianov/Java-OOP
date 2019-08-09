@@ -1,6 +1,6 @@
-package J_UnitTesting.Lab.src.main.java.rpg_lab;
+package J_UnitTesting.Lab.rpg_lab;
 
-public interface Weapon {
+public interface Weapon{
     void attack(Target target);
     int getAttackPoints();
     int getDurabilityPoints();

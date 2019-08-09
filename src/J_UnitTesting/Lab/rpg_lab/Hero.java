@@ -1,9 +1,10 @@
-package J_UnitTesting.Lab.src.main.java.rpg_lab;
+package J_UnitTesting.Lab.rpg_lab;
 
 public class Hero {
     private String name;
     private int experience;
     private Weapon weapon;
+
 
     public Hero(String name, Weapon weapon) {
         this.name = name;
