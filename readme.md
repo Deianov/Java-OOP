@@ -13,7 +13,7 @@ Course Topics<br/>
 * [Exceptions and Error Handling](https://github.com/Deianov/Java-OOP/tree/master/src/H_ExceptionsAndErrorHandling)<br/>
 * Debugging Techniques<br/>
 * [Workshop](https://github.com/Deianov/Java-OOP/tree/master/src/I_Workshop)<br/>
-* [Unit Testing](https://github.com/Deianov/Java-OOP/tree/master/src/J_UnitTesting)<br/>
+* [Unit Testing](https://github.com/Deianov/Java-OOP/tree/master/test/J_UnitTesting)<br/>
 * Test Driven Development<br/>
 * Object Communication and Events<br/>
 * [Exams](https://github.com/Deianov/Java-OOP/tree/master/src/Q_Exams)
