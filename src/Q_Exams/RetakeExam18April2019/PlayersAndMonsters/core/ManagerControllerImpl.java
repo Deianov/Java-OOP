@@ -1,19 +1,19 @@
-package Q_Exams.RetakeExam18April2019.core;
+package Q_Exams.RetakeExam18April2019.PlayersAndMonsters.core;
 
-import Q_Exams.RetakeExam18April2019.common.ConstantMessages;
-import Q_Exams.RetakeExam18April2019.core.interfaces.ManagerController;
-import Q_Exams.RetakeExam18April2019.models.battleFields.BattleFieldImpl;
-import Q_Exams.RetakeExam18April2019.models.battleFields.interfaces.Battlefield;
-import Q_Exams.RetakeExam18April2019.models.cards.MagicCard;
-import Q_Exams.RetakeExam18April2019.models.cards.TrapCard;
-import Q_Exams.RetakeExam18April2019.models.cards.interfaces.Card;
-import Q_Exams.RetakeExam18April2019.models.players.Advanced;
-import Q_Exams.RetakeExam18April2019.models.players.Beginner;
-import Q_Exams.RetakeExam18April2019.models.players.interfaces.Player;
-import Q_Exams.RetakeExam18April2019.repositories.CardRepositoryImpl;
-import Q_Exams.RetakeExam18April2019.repositories.PlayerRepositoryImpl;
-import Q_Exams.RetakeExam18April2019.repositories.interfaces.CardRepository;
-import Q_Exams.RetakeExam18April2019.repositories.interfaces.PlayerRepository;
+import Q_Exams.RetakeExam18April2019.PlayersAndMonsters.common.ConstantMessages;
+import Q_Exams.RetakeExam18April2019.PlayersAndMonsters.core.interfaces.ManagerController;
+import Q_Exams.RetakeExam18April2019.PlayersAndMonsters.models.battleFields.BattleFieldImpl;
+import Q_Exams.RetakeExam18April2019.PlayersAndMonsters.models.battleFields.interfaces.Battlefield;
+import Q_Exams.RetakeExam18April2019.PlayersAndMonsters.models.cards.MagicCard;
+import Q_Exams.RetakeExam18April2019.PlayersAndMonsters.models.cards.TrapCard;
+import Q_Exams.RetakeExam18April2019.PlayersAndMonsters.models.cards.interfaces.Card;
+import Q_Exams.RetakeExam18April2019.PlayersAndMonsters.models.players.Advanced;
+import Q_Exams.RetakeExam18April2019.PlayersAndMonsters.models.players.Beginner;
+import Q_Exams.RetakeExam18April2019.PlayersAndMonsters.models.players.interfaces.Player;
+import Q_Exams.RetakeExam18April2019.PlayersAndMonsters.repositories.CardRepositoryImpl;
+import Q_Exams.RetakeExam18April2019.PlayersAndMonsters.repositories.PlayerRepositoryImpl;
+import Q_Exams.RetakeExam18April2019.PlayersAndMonsters.repositories.interfaces.CardRepository;
+import Q_Exams.RetakeExam18April2019.PlayersAndMonsters.repositories.interfaces.PlayerRepository;
 
 
 public class ManagerControllerImpl implements ManagerController {

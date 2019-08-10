@@ -1,7 +1,7 @@
-package Q_Exams.RetakeExam18April2019;
+package Q_Exams.RetakeExam18April2019.PlayersAndMonsters;
 
-import Q_Exams.RetakeExam18April2019.core.ManagerControllerImpl;
-import Q_Exams.RetakeExam18April2019.core.interfaces.ManagerController;
+import Q_Exams.RetakeExam18April2019.PlayersAndMonsters.core.ManagerControllerImpl;
+import Q_Exams.RetakeExam18April2019.PlayersAndMonsters.core.interfaces.ManagerController;
 
 import java.util.Scanner;
 

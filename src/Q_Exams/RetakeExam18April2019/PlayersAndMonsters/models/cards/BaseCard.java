@@ -1,7 +1,7 @@
-package Q_Exams.RetakeExam18April2019.models.cards;
+package Q_Exams.RetakeExam18April2019.PlayersAndMonsters.models.cards;
 
-import Q_Exams.RetakeExam18April2019.common.ConstantMessages;
-import Q_Exams.RetakeExam18April2019.models.cards.interfaces.Card;
+import Q_Exams.RetakeExam18April2019.PlayersAndMonsters.common.ConstantMessages;
+import Q_Exams.RetakeExam18April2019.PlayersAndMonsters.models.cards.interfaces.Card;
 
 public abstract class BaseCard implements Card {
     private String name;

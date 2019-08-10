@@ -1,4 +1,4 @@
-package Q_Exams.RetakeExam18April2019.models.cards;
+package Q_Exams.RetakeExam18April2019.PlayersAndMonsters.models.cards;
 
 public class TrapCard extends BaseCard {
     private static final int DEFAULT_DAMAGE_POINTS = 120;

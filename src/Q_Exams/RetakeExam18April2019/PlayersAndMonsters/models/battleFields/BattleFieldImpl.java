@@ -1,9 +1,9 @@
-package Q_Exams.RetakeExam18April2019.models.battleFields;
+package Q_Exams.RetakeExam18April2019.PlayersAndMonsters.models.battleFields;
 
-import Q_Exams.RetakeExam18April2019.models.battleFields.interfaces.Battlefield;
-import Q_Exams.RetakeExam18April2019.models.cards.interfaces.Card;
-import Q_Exams.RetakeExam18April2019.models.players.Beginner;
-import Q_Exams.RetakeExam18April2019.models.players.interfaces.Player;
+import Q_Exams.RetakeExam18April2019.PlayersAndMonsters.models.battleFields.interfaces.Battlefield;
+import Q_Exams.RetakeExam18April2019.PlayersAndMonsters.models.cards.interfaces.Card;
+import Q_Exams.RetakeExam18April2019.PlayersAndMonsters.models.players.Beginner;
+import Q_Exams.RetakeExam18April2019.PlayersAndMonsters.models.players.interfaces.Player;
 
 
 public class BattleFieldImpl implements Battlefield {

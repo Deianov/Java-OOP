@@ -1,4 +1,4 @@
-package Q_Exams.RetakeExam18April2019.models.cards.interfaces;
+package Q_Exams.RetakeExam18April2019.PlayersAndMonsters.models.cards.interfaces;
 
 public interface Card {
     String getName();

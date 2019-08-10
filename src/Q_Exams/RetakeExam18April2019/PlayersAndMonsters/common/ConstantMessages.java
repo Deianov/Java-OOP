@@ -1,4 +1,4 @@
-package Q_Exams.RetakeExam18April2019.common;
+package Q_Exams.RetakeExam18April2019.PlayersAndMonsters.common;
 
 public class ConstantMessages {
 

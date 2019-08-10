@@ -1,8 +1,8 @@
-package Q_Exams.RetakeExam18April2019.models.players;
+package Q_Exams.RetakeExam18April2019.PlayersAndMonsters.models.players;
 
-import Q_Exams.RetakeExam18April2019.common.ConstantMessages;
-import Q_Exams.RetakeExam18April2019.models.players.interfaces.Player;
-import Q_Exams.RetakeExam18April2019.repositories.interfaces.CardRepository;
+import Q_Exams.RetakeExam18April2019.PlayersAndMonsters.common.ConstantMessages;
+import Q_Exams.RetakeExam18April2019.PlayersAndMonsters.models.players.interfaces.Player;
+import Q_Exams.RetakeExam18April2019.PlayersAndMonsters.repositories.interfaces.CardRepository;
 
 public abstract class BasePlayer implements Player {
     private CardRepository cardRepository;

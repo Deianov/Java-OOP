@@ -1,4 +1,4 @@
-package Q_Exams.RetakeExam18April2019.core.interfaces;
+package Q_Exams.RetakeExam18April2019.PlayersAndMonsters.core.interfaces;
 
 public interface ManagerController {
     String addPlayer(String type, String username);

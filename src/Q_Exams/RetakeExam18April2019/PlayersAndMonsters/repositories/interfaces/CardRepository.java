@@ -1,6 +1,6 @@
-package Q_Exams.RetakeExam18April2019.repositories.interfaces;
+package Q_Exams.RetakeExam18April2019.PlayersAndMonsters.repositories.interfaces;
 
-import Q_Exams.RetakeExam18April2019.models.cards.interfaces.Card;
+import Q_Exams.RetakeExam18April2019.PlayersAndMonsters.models.cards.interfaces.Card;
 
 import java.util.List;
 

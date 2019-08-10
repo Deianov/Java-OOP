@@ -1,6 +1,6 @@
-package Q_Exams.RetakeExam18April2019.models.players;
+package Q_Exams.RetakeExam18April2019.PlayersAndMonsters.models.players;
 
-import Q_Exams.RetakeExam18April2019.repositories.interfaces.CardRepository;
+import Q_Exams.RetakeExam18April2019.PlayersAndMonsters.repositories.interfaces.CardRepository;
 
 
 public class Advanced extends BasePlayer {
