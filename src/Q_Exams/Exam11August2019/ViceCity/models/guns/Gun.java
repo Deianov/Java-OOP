@@ -1,4 +1,4 @@
-package Q_Exams.Exam11August2019.viceCity.models.guns;
+package Q_Exams.Exam11August2019.ViceCity.models.guns;
 
 public interface Gun {
     String getName();

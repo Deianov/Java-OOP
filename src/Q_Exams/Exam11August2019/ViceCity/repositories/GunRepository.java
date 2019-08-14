@@ -1,7 +1,7 @@
-package Q_Exams.Exam11August2019.viceCity.repositories;
+package Q_Exams.Exam11August2019.ViceCity.repositories;
 
-import Q_Exams.Exam11August2019.viceCity.models.guns.Gun;
-import Q_Exams.Exam11August2019.viceCity.repositories.interfaces.Repository;
+import Q_Exams.Exam11August2019.ViceCity.models.guns.Gun;
+import Q_Exams.Exam11August2019.ViceCity.repositories.interfaces.Repository;
 
 import java.util.*;
 

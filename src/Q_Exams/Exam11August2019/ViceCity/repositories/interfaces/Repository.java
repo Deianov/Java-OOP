@@ -1,4 +1,4 @@
-package Q_Exams.Exam11August2019.viceCity.repositories.interfaces;
+package Q_Exams.Exam11August2019.ViceCity.repositories.interfaces;
 
 import java.util.Collection;
 

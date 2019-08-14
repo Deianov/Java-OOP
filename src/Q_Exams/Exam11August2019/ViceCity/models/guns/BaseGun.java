@@ -1,6 +1,6 @@
-package Q_Exams.Exam11August2019.viceCity.models.guns;
+package Q_Exams.Exam11August2019.ViceCity.models.guns;
 
-import Q_Exams.Exam11August2019.viceCity.common.ExceptionMessages;
+import Q_Exams.Exam11August2019.ViceCity.common.ExceptionMessages;
 
 public abstract class BaseGun implements Gun {
     private String name;

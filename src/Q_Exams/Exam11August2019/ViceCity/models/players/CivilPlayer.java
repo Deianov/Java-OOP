@@ -1,4 +1,4 @@
-package Q_Exams.Exam11August2019.viceCity.models.players;
+package Q_Exams.Exam11August2019.ViceCity.models.players;
 
 public class CivilPlayer extends BasePlayer {
     private static final int INITIAL_LIFE_POINTS = 50;

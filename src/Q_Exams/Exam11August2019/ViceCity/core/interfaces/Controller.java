@@ -1,4 +1,4 @@
-package Q_Exams.Exam11August2019.viceCity.core.interfaces;
+package Q_Exams.Exam11August2019.ViceCity.core.interfaces;
 
 public interface Controller {
     String addPlayer(String name);

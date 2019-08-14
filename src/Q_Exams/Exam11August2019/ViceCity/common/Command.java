@@ -1,4 +1,4 @@
-package Q_Exams.Exam11August2019.viceCity.common;
+package Q_Exams.Exam11August2019.ViceCity.common;
 
 public enum  Command {
     AddPlayer,

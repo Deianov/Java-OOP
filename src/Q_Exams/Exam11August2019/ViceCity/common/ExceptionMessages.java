@@ -1,4 +1,4 @@
-package Q_Exams.Exam11August2019.viceCity.common;
+package Q_Exams.Exam11August2019.ViceCity.common;
 
 public class ExceptionMessages {
     public static final String NAME_NULL = "Name cannot be null or whitespace!";

@@ -1,9 +1,9 @@
-package Q_Exams.Exam11August2019.viceCity.models.players;
+package Q_Exams.Exam11August2019.ViceCity.models.players;
 
-import Q_Exams.Exam11August2019.viceCity.common.ExceptionMessages;
-import Q_Exams.Exam11August2019.viceCity.models.guns.Gun;
-import Q_Exams.Exam11August2019.viceCity.repositories.GunRepository;
-import Q_Exams.Exam11August2019.viceCity.repositories.interfaces.Repository;
+import Q_Exams.Exam11August2019.ViceCity.common.ExceptionMessages;
+import Q_Exams.Exam11August2019.ViceCity.models.guns.Gun;
+import Q_Exams.Exam11August2019.ViceCity.repositories.GunRepository;
+import Q_Exams.Exam11August2019.ViceCity.repositories.interfaces.Repository;
 
 public abstract class BasePlayer implements Player {
     private String name;

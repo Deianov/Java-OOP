@@ -1,7 +1,7 @@
-package Q_Exams.Exam11August2019.viceCity.models.neighbourhood;
+package Q_Exams.Exam11August2019.ViceCity.models.neighbourhood;
 
-import Q_Exams.Exam11August2019.viceCity.models.guns.Gun;
-import Q_Exams.Exam11August2019.viceCity.models.players.Player;
+import Q_Exams.Exam11August2019.ViceCity.models.guns.Gun;
+import Q_Exams.Exam11August2019.ViceCity.models.players.Player;
 
 import java.util.Collection;
 import java.util.Iterator;

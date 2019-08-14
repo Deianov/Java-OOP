@@ -1,17 +1,17 @@
-package Q_Exams.Exam11August2019.viceCity.core;
+package Q_Exams.Exam11August2019.ViceCity.core;
 
-import Q_Exams.Exam11August2019.viceCity.common.ConstantMessages;
-import Q_Exams.Exam11August2019.viceCity.core.interfaces.Controller;
-import Q_Exams.Exam11August2019.viceCity.models.guns.Gun;
-import Q_Exams.Exam11August2019.viceCity.models.guns.Pistol;
-import Q_Exams.Exam11August2019.viceCity.models.guns.Rifle;
-import Q_Exams.Exam11August2019.viceCity.models.neighbourhood.GangNeighbourhood;
-import Q_Exams.Exam11August2019.viceCity.models.neighbourhood.Neighbourhood;
-import Q_Exams.Exam11August2019.viceCity.models.players.CivilPlayer;
-import Q_Exams.Exam11August2019.viceCity.models.players.MainPlayer;
-import Q_Exams.Exam11August2019.viceCity.models.players.Player;
-import Q_Exams.Exam11August2019.viceCity.repositories.GunRepository;
-import Q_Exams.Exam11August2019.viceCity.repositories.interfaces.Repository;
+import Q_Exams.Exam11August2019.ViceCity.common.ConstantMessages;
+import Q_Exams.Exam11August2019.ViceCity.core.interfaces.Controller;
+import Q_Exams.Exam11August2019.ViceCity.models.guns.Gun;
+import Q_Exams.Exam11August2019.ViceCity.models.guns.Pistol;
+import Q_Exams.Exam11August2019.ViceCity.models.guns.Rifle;
+import Q_Exams.Exam11August2019.ViceCity.models.neighbourhood.GangNeighbourhood;
+import Q_Exams.Exam11August2019.ViceCity.models.neighbourhood.Neighbourhood;
+import Q_Exams.Exam11August2019.ViceCity.models.players.CivilPlayer;
+import Q_Exams.Exam11August2019.ViceCity.models.players.MainPlayer;
+import Q_Exams.Exam11August2019.ViceCity.models.players.Player;
+import Q_Exams.Exam11August2019.ViceCity.repositories.GunRepository;
+import Q_Exams.Exam11August2019.ViceCity.repositories.interfaces.Repository;
 
 import java.util.ArrayList;
 import java.util.Collection;

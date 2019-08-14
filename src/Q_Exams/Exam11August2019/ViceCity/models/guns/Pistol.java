@@ -1,4 +1,4 @@
-package Q_Exams.Exam11August2019.viceCity.models.guns;
+package Q_Exams.Exam11August2019.ViceCity.models.guns;
 
 public class Pistol extends BaseGun {
     private static final int BULLETS_PER_BARREL = 10;

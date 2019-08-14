@@ -1,8 +1,8 @@
-package Q_Exams.Exam11August2019.viceCity.core;
+package Q_Exams.Exam11August2019.ViceCity.core;
 
-import Q_Exams.Exam11August2019.viceCity.common.Command;
-import Q_Exams.Exam11August2019.viceCity.core.interfaces.Controller;
-import Q_Exams.Exam11August2019.viceCity.core.interfaces.Engine;
+import Q_Exams.Exam11August2019.ViceCity.common.Command;
+import Q_Exams.Exam11August2019.ViceCity.core.interfaces.Controller;
+import Q_Exams.Exam11August2019.ViceCity.core.interfaces.Engine;
 
 import java.io.BufferedReader;
 import java.io.IOException;
